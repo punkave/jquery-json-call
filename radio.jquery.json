@@ -1,9 +1,9 @@
 {
   "name": "radio",
-  "title": "radio",
-  "description": "radio lets you get and set the current value of a group of radio buttons, filling a gap in jQuery's $.val. It is not a replacement for radio buttons. It just makes working with them pleasant.",
+  "title": "Radio",
+  "description": "Radio lets you get and set the current value of a group of radio buttons, filling a gap in jQuery's $.val. It is not a replacement for radio buttons. It just makes working with them more pleasant.",
   "keywords": ["radio", "button", "apostrophe", "punkave"],
-  "version": "0.1.1",
+  "version": "0.1.2",
   "author": {
     "name": "P'unk Avenue",
     "url": "http://punkave.com/"
