@@ -10,6 +10,8 @@
 
 When you use `$.post` to send a data structure, everything comes through as an array, an object, or a string. By sending your request as JSON, you can keep the distinctions between `null`, `false`, numbers and strings alive.
 
+(Of course you still need to sanitize the data you receive on the server side. Never trust a browser!)
+
 ## How to Use
 
     $.jsonCall('/my-api', { limit: 5, type: 'blue' }, function(results) {
