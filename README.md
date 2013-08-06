@@ -4,6 +4,12 @@
 
 `jquery-json-call` makes it easy to make an API request to a URL with JSON in BOTH directions. Say goodbye to the limitations of the query string format. Your nulls will stay null! Your numbers will remain numbers!
 
+## Why JSON in both directions?
+
+"Wait, I don't quite get it. Why is this better than a regular `$.post` call?"
+
+When you use `$.post` to send a data structure, everything comes through as an array, an object, or a string. By sending your request as JSON, you can keep the distinctions between `null`, `false`, numbers and strings alive.
+
 ## How to Use
 
     $.jsonCall('/my-api', { limit: 5, type: 'blue' }, function(results) {
