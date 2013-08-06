@@ -1,0 +1,36 @@
+{
+  "name": "json-call",
+  "title": "JSON Call",
+  "description": "JSON Call makes it easy to make an API request to a URL with JSON in BOTH directions. Say goodbye to the limitations of the query string format. Your nulls will stay null! Your numbers will remain numbers!",
+  "keywords": ["json", "rpc", "api", "ajax", "post", "ipc"],
+  "version": "0.1.0",
+  "author": {
+    "name": "P'unk Avenue",
+    "url": "http://punkave.com/"
+  },
+  "maintainers": [
+    {
+      "name": "Tom Boutell",
+      "email": "tom@punkave.com",
+      "url": "http://punkave.com"
+    },
+    {
+      "name": "Kyle Stetz",
+      "email": "kyle@punkave.com",
+      "url": "http://punkave.com"
+    }
+  ],
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/punkave/jquery-json-call/LICENSE.md"
+    }
+  ],
+  "bugs": "https://github.com/punkave/jquery-json-call/issues",
+  "homepage": "https://github.com/punkave/jquery-json-call",
+  "docs": "https://github.com/punkave/jquery-json-call",
+  "download": "https://github.com/punkave/jquery-json-call",
+  "dependencies": {
+    "jquery": ">=1.9"
+  }
+}
