@@ -10,7 +10,10 @@
 // For complete documentation.
 
 (function( $ ) {
-  $.fn.jsonCall = function(url, params, success, failure) {
+  // This is correct - we're adding a function called directly
+  // like $.get or $.ajax, not a function that operates on
+  // elements
+  $.jsonCall = function(url, data, success, failure) {
     var ajax = $.ajax({
       type: 'POST',
       url: url,
