@@ -31,9 +31,19 @@ Here's a node.js Express example on the server side.
 
 Notice we didn't have to do anything special on the server side to handle JSON? Express is great like that.
 
+## Additional Options
+
+Insert an additional argument *before* the data object to pass additional options.
+
+Supported options are:
+
+* `async`: if you explicitly set `async` to `false` the call is made synchronously. Normally you want to avoid this. However, it is crucial if you want your call to complete during a `beforeunload` event when the user leaves the page.
+
+* `dataType`: normally a JSON response is expected. You may change that by setting the `dataType` option. You may set this to `*` for the default "intelligent guess" behavior of `$.ajax`. `html` is another useful value. This is handy if you wish to send JSON, but receive an HTML fragment. See the [jquery $.ajax documentation](http://api.jquery.com/jquery.ajax/) for details on this option.
+
 ## Requirements
 
-You need jQuery, of course. `jquery-json-call` is actively supported with jQuery 1.9 and 2.0 but should work fine with somewhat older versions.
+You need jQuery, of course. `jquery-json-call` is actively supported with jQuery 1.9 and up but should work fine with somewhat older versions.
 
 If you wish your code to work in browsers that do not support `JSON.stringify`, you will need [Douglas Crockford's JSON2 shim](https://github.com/douglascrockford/JSON-js) or a similar shim that provides `JSON.stringify`. However note that even IE8 supports it out of the box.
 
@@ -41,7 +51,7 @@ The server on the other end must understand requests posted with the `applicatio
 
 This is a pain in PHP, but extremely easy with node.js and Express: you will find the object you passed to `$.jsonCall` in `req.body`. Boom! That's it. [If you are stuck with PHP, you may find this helpful.](http://stackoverflow.com/questions/3063787/handle-json-request-in-php)
 
-The server's response must also be JSON. However you don't have to set the content type explicitly as long as what you output is valid JSON.
+Unless you override with the `dataType` option, the server's response must also be JSON. However you don't have to set the content type header correctly as long as what you output is valid JSON.
 
 Again, with Express you can just write:
 
