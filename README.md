@@ -1,8 +1,8 @@
-# jquery-json-call
+# $.jsonCall
 
 <a href="http://apostrophenow.org/"><img src="https://raw.github.com/punkave/jquery-json-call/master/logos/logo-box-madefor.png" align="right" /></a>
 
-`jquery-json-call` makes it easy to make an API request to a URL with JSON in BOTH directions. Say goodbye to the limitations of the query string format. Your nulls will stay null! Your numbers will remain numbers!
+`$.jsonCall` makes it easy to make an API request to a URL with JSON in BOTH directions. Say goodbye to the limitations of the query string format. Your nulls will stay null! Your numbers will remain numbers!
 
 ## Why JSON in both directions?
 
@@ -43,7 +43,7 @@ Supported options are:
 
 ## Requirements
 
-You need jQuery, of course. `jquery-json-call` is actively supported with jQuery 1.9 and up but should work fine with somewhat older versions.
+You need jQuery, of course. `$.jsonCall` is actively supported with jQuery 1.9 and up but should work fine with somewhat older versions.
 
 If you wish your code to work in browsers that do not support `JSON.stringify`, you will need [Douglas Crockford's JSON2 shim](https://github.com/douglascrockford/JSON-js) or a similar shim that provides `JSON.stringify`. However note that even IE8 supports it out of the box.
 
@@ -61,7 +61,7 @@ Arrays are valid responses too.
 
 ## About P'unk Avenue and Apostrophe
 
-`jquery-json-call` was created at [P'unk Avenue](http://punkave.com) for use in Apostrophe, an open-source content management system built on node.js. If you like `jquery-json-call` you should definitely [check out apostrophenow.org](http://apostrophenow.org). Also be sure to visit us on [github](http://github.com/punkave).
+`$.jsonCall` was created at [P'unk Avenue](http://punkave.com) for use in Apostrophe, an open-source content management system built on node.js. If you like `jquery-json-call` you should definitely [check out apostrophenow.org](http://apostrophenow.org). Also be sure to visit us on [github](http://github.com/punkave).
 
 ## Support
 
