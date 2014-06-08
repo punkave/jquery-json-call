@@ -3,7 +3,7 @@
   "title": "JSON Call",
   "description": "JSON Call makes it easy to make an API request to a URL with JSON in BOTH directions. Say goodbye to the limitations of the query string format. Your nulls will stay null! Your numbers will remain numbers!",
   "keywords": ["json", "rpc", "api", "ajax", "post", "ipc"],
-  "version": "0.1.1",
+  "version": "1.0.0",
   "author": {
     "name": "P'unk Avenue",
     "url": "http://punkave.com/"
